@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <h2>3.d.Apply jQuery traversing methods  </h2>
+    <h3>each method:</h3>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("li").each(function(){
+      alert($(this).text())
+    });
+  });
+});
+</script>
+</head>
+<body>
+
+<ul>
+  <li>Water</li>
+  <li>Milk</li>
+  <li>Tea</li>
+</ul>
+<button>Alert the value of each list item</button>
+</body>
+</html>
